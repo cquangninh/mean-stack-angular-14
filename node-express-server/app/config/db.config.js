@@ -1,3 +1,3 @@
 module.exports = {
-  url: "mongodb://localhost:27017/bezkoder_db"
+  url: 'mongodb+srv://root:abcde12345-@cluster0.6mjmbhq.mongodb.net/?retryWrites=true&w=majority',
 };
