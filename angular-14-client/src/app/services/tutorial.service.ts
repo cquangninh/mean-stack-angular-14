@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { Tutorial } from '../models/tutorial.model';
 
 const baseUrl =
-  'https://graphql-ybekqz--8080.local-credentialless.webcontainer.io/api/tutorials';
+  'https://mean-stack-angular-server-n1vq9jcq6-cquangninh.vercel.app/api/tutorials';
 
 @Injectable({
   providedIn: 'root',
@@ -12,7 +12,7 @@ const baseUrl =
 export class TutorialService {
   headers = new HttpHeaders().set(
     'access-control-allow-origin',
-    'https://graphql-ybekqz--8080.local-credentialless.webcontainer.io/'
+    'https://mean-stack-angular-server-n1vq9jcq6-cquangninh.vercel.app/'
   );
 
   constructor(private http: HttpClient) {}
