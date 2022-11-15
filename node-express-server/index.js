@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 
 var corsOptions = {
-  origin: 'https://graphql-ybekqz--4200.local-credentialless.webcontainer.io/',
+  origin: '*',
 };
 
 app.use(cors(corsOptions));
