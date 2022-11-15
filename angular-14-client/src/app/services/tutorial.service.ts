@@ -3,17 +3,13 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Tutorial } from '../models/tutorial.model';
 
-const baseUrl =
-  'https://mean-stack-angular-server-n1vq9jcq6-cquangninh.vercel.app/api/tutorials';
+const baseUrl = 'https://mean-stack-angular-14-wclo.vercel.app/api/tutorials';
 
 @Injectable({
   providedIn: 'root',
 })
 export class TutorialService {
-  headers = new HttpHeaders().set(
-    'access-control-allow-origin',
-    'https://mean-stack-angular-server-n1vq9jcq6-cquangninh.vercel.app/'
-  );
+  headers = new HttpHeaders().set('access-control-allow-origin', '*');
 
   constructor(private http: HttpClient) {}
 
